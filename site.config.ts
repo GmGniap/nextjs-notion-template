@@ -2,19 +2,22 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: '7875426197cf461698809def95960ebf',
+  // rootNotionPageId: '7875426197cf461698809def95960ebf',
+  rootNotionPageId: '953809df7f514d63befdfd966e67dc92',
+  // https://pi-blog.notion.site/Journal-by-GmGniap-953809df7f514d63befdfd966e67dc92
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
-  rootNotionSpaceId: null,
+  // My Workspace ID
+  rootNotionSpaceId: '2240733f-5609-4b26-adde-f06a010fa7c8',
 
   // basic site info (required)
-  name: 'Next.js Notion Starter Kit',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
-  author: 'Travis Fischer',
+  name: 'Personal Blog',
+  domain: 'blog.paing.me',
+  author: 'GmGniap',
 
   // open graph metadata (optional)
-  description: 'Example Next.js Notion Starter Kit Site',
+  description: 'Journal by a youth from small country',
 
   // social usernames (optional)
   twitter: 'transitive_bs',
