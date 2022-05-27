@@ -16,6 +16,7 @@ import {
   Site
 } from './types'
 
+
 export const rootNotionPageId: string = parsePageId(
   getSiteConfig('rootNotionPageId'),
   { uuid: false }
@@ -27,7 +28,8 @@ if (!rootNotionPageId) {
 
 // if you want to restrict pages to a single notion workspace (optional)
 export const rootNotionSpaceId: string | null = parsePageId(
-  getSiteConfig('rootNotionSpaceId', null),
+  // getSiteConfig('rootNotionSpaceId', null),
+  process.env.WS_ID,
   { uuid: true }
 )
 
